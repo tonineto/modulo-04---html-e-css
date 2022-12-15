@@ -1,0 +1,66 @@
+@charset "UTF-8"
+
+body {
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  /*background-color: black;*/
+}
+
+body {
+  background: url('../imagens/fundo-madeira1.jpg') no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+section#telefone {
+  position: absolute; /* permite localizar top e left*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 627px;
+  width: 311px;
+  background: url('../imagens/frame-iphone.png') no-repeat;
+
+  /* Independente do tamanho da tela, a parte azul, do celular, sempre vai ficar centralizado. Aqui, por exemplo, são as configurações para ficar no meio da tela. Por isso a posição é absoluta*/
+}
+
+iframe#tela {
+  position: relative;
+  top: 80px;
+  left: 22px;
+  width: 267px;
+  height: 471px;
+}
+
+section#redes-sociais {
+  box-sizing: border-box;
+  text-align: right;
+}
+
+img.buton {
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+}
+
+section#redes-sociais img:hover {
+  border: 2px solid blue;
+  transform: translate(-3px, -3px);
+  transition: transform 1s;
+}

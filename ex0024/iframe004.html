@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframes</title>
+  </head>
+  <body>
+    <h1>Meu site principal</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ea?
+      Quas, praesentium voluptatibus labore in a cupiditate eum, iste optio
+      provident sit debitis tenetur dolorem nihil recusandae ea, dolore iure!
+    </p>
+
+    <!--sandbox: proteção dos dados lançados - bloqueia acessos maliciosos- 
+
+      formulário funcionando = sandbox = "allow-same-origin allow forms allow-scripts"
+     
+      referrerpolicy = mais segurança - o que tá carregado no iframe não captura dados de navegação do usuário
+    
+    -->
+
+    <iframe
+      src="pag004.html"
+      sandbox="sanbox"
+      referrerpolicy="no-refere-when-downgrade"
+    ></iframe>
+
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel est unde
+      veritatis pariatur tempora blanditiis, excepturi vitae sed quidem
+      accusantium non facilis sapiente omnis fuga voluptas nisi sint aliquid
+      voluptates?
+    </p>
+  </body>
+</html>

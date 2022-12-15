@@ -1,0 +1,28 @@
+/* Estilos para impressora */
+
+@charset "UTF-8";
+
+* {
+  margin: 10px;
+  padding: 10px;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+menu {
+  /* Não aparecer o menu quando for imprimir */
+  display: none;
+}
+
+article {
+  width: 100%;
+}
+
+article::after {
+  content: 'Esse documento foi impresso no site www.cursoemvideo.com';
+  font-style: italic;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15pt;
+      }
+
+      iframe {
+        width: 95vw;
+        border: 2px solid black;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Faça uma escolha</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi vero
+      in, nam rerum hic perspiciatis! Quos, fuga aliquid magnam neque sapiente,
+      quasi illo ipsa velit quod molestias adipisci atque.
+    </p>
+
+    <!--Obs: posso colocar outras páginas para abrir no próprio frame, criando navegações dentro da própria página. O iframe deve ter um nome-->
+
+    <ul>
+      <li>
+        <a href="https://www.cursoemvideo.com" target="frame"
+          >Primeira Página</a
+        >
+      </li>
+      <li><a href="https://www.ufjf.br" target="frame">Segunda Página</a></li>
+      <li>
+        <a
+          href="https://www.cursoemvideo.com/curso/javascript/aulas/condicoes-em-javascript/modulos/exercicios-javascript-parte-3/"
+          target="frame"
+          >Terceira Página</a
+        >
+      </li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi
+      voluptates maiores impedit et qui quae voluptas quidem quis consectetur,
+      voluptate possimus doloremque tempora corrupti nemo. Illo suscipit ducimus
+      officiis.
+    </p>
+
+    <!-- O parâmetro Srcdoc permite a inclusão de conteúdo html dentro do iframe, como um conteúdo estático inicial. Não é recomendável a utilização-->
+
+    <iframe
+      srcdoc="<h1> Escolha uma das opções acima </h1> <p>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis,
+        quidem! Eveniet culpa facilis, mollitia quisquam unde nesciunt. Fuga
+        consequatur minus quibusdam ipsum, repudiandae, ab iste placeat ad
+        mollitia eaque quae. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Error quo nulla repudiandae nemo sint! Reprehenderit itaque, a
+        maiores nemo quod, officiis inventore tenetur iste provident distinctio
+        iure hic in quibusdam? </p> <img src= 'cursoemvideo.png'>"
+      name="frame"
+    >
+      <p>Infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis,
+      quidem! Eveniet culpa facilis, mollitia quisquam unde nesciunt. Fuga
+      consequatur minus quibusdam ipsum, repudiandae, ab iste placeat ad
+      mollitia eaque quae. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Error quo nulla repudiandae nemo sint! Reprehenderit itaque, a
+      maiores nemo quod, officiis inventore tenetur iste provident distinctio
+      iure hic in quibusdam?
+    </p>
+  </body>
+</html>
+
+<!--
+  Incovenientes do Iframe:
+  
+  1- Não confundir iframe com frame(Quase não utilizado)
+
+  2- Problemas relacionados aos mecanismos de busca - Após os anúncios, os sites de busca priorizam aqueles com maior destaque, identicando a relevância. O mecanismo costuma não indexar conteúdos em iframe.
+
+  3- Usabilidade e acessibilidade: os softwares leitores de tela também tem dificuldade para acessar iframes. Isso pode prejudicar o acesso de portadores de deficiência
+
+  4- Sites não responsivos, ele pode aparecer quebrado dentro do iframe.
+
+  5- Pesquisar: ataques xss e cross sites; colocar em iframes sites não seguros
+
+  6 Algumas configurações para proteção de iframes:
+
+
+-->

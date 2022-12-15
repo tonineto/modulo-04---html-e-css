@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h4>Exemplo de formulário</h4>
+
+     <!--Campo fieldset é o agrupamento dos campos-->
+
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <form action="cadastro.php" method="get">
+        <p>
+          <label for="inome">Nome</label>
+          <input type="text" name="nome" id="inome" />
+        </p>
+        <p>
+          <label for="iemail">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="iemail"
+            required
+            autocomplete="off"
+          />
+        </p>
+        <p>
+          <label for="itetelefone">Telefone</label>
+          <input
+            type="tel"
+            name="telefone"
+            id="itelefone"
+            autocomplete="tel"
+            required
+            placeholder="(xx) xxxx-xxxx"
+          />
+        </p>
+    </fieldset>
+
+      <!-- Estudar expressões regulares, referente às condições de preenchimento de um determinado campo-->
+
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </p>
+    </form>
+  </body>
+</html>
